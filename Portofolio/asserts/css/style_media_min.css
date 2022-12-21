@@ -1,0 +1,117 @@
+@media screen and (min-width: 767px) {
+    /* Base */
+  
+    .container, .container-medium{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* Header */
+  
+    .nav{
+      height: 5rem;
+    }
+  
+    .nav-toggle, .nav-close{
+      display: none;
+    }
+  
+    .nav-list{
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+  
+    .nav-menu{
+      margin-left: auto;
+    }
+  
+    /* Hero */
+  
+    .hero{
+      display: block;
+      padding: 13rem  0;
+    }
+  
+    .hero p{
+      font-size: 1rem;
+      text-align: justify;
+    }
+  
+    /* Experince */
+    .accordion-experience{
+      width: 100%;
+      color: rgba(48, 69, 92,1);
+      margin-top: 3rem;
+    }
+  
+    .accordion-experience section label{
+      border-color: #1f1e1e;
+      border-style: solid;
+      border-width: 0 0 0 2px;
+      width: 20%;
+    }
+  
+    .accordion-experience section label:hover span{
+      transition: all .3s ease-in-out;
+    }
+  
+    .accordion-experience section label:hover span{
+      margin-left: 6px;
+    }
+  
+    .accordion-experience section input[name="sections"]:checked + label{
+      background-color: #1f1e1e;
+      color: #ffffff;
+      border-style: solid;
+      border-width: 0 0 0 2px;
+    }
+  
+    .accordion-experience section article{
+      position: absolute;
+      width: 70%;
+      left:26.5%;
+      padding: 0;
+    }
+  
+    .title-experience{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    /* Project */
+  
+    .box-featured-projects{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .project{
+      cursor: pointer;
+    }
+  
+    .project img{
+      transition: all .3s ease-in-out;
+    }
+  
+    .project:hover img{
+      transform: scale(1.02)
+    }
+  
+    /* Footer */
+  
+    footer .container-medium .box-contact{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .box-contact .contact p{
+      transition: all .3s ease-in-out;
+      font-size: 1rem;
+    }
+  
+  
+    .box-contact .contact:hover p{
+      font-size: 1.2rem;
+    }
+  
+  }
